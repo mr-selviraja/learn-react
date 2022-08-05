@@ -1,5 +1,6 @@
 import './App.css';
-import {Component} from 'react'
+import { Component } from 'react'
+import CardList from './components/CardList/CardList.Component';
 
 
 class App extends Component {
@@ -29,7 +30,6 @@ class App extends Component {
     } )
   }
 
-
   render() {
 
     const { monsters, searchField } = this.state;
@@ -47,13 +47,14 @@ class App extends Component {
           placeholder='Enter monster name'
           onChange={onSearchChange}
         />
-        {filteredMonsters.map( (monster) => {
+        {/* {filteredMonsters.map( (monster) => {
           return (
             <div key={monster.id}>
               <h4>{monster.name}</h4>
             </div>
           )
-        })}
+        })} */}
+        <CardList monsters={filteredMonsters} />
       </div>
     )
   }
