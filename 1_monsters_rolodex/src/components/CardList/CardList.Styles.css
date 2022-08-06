@@ -1,0 +1,32 @@
+.card-list {
+    width: 85vw;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.6em;
+}
+
+.card-list h3, 
+.card-list p {
+    color: #167a57;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  border-radius: .5em;
+  padding: 2em;
+  cursor: pointer;
+  box-shadow: 0 5px 5px #167a57;
+  transition: all .25s ease-out;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #167a57;
+}
+
+.card-container img {
+    margin-bottom: 1em;
+}
