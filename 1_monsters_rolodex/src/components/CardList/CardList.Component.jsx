@@ -1,4 +1,3 @@
-import React from 'react';
 import './CardList.Styles.css'
 import Card from "../Card/Card.Component";
 
